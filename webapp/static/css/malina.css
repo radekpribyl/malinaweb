@@ -1,0 +1,17 @@
+﻿.vercentered {
+    top:50%;
+    transform:translateY(-50%)
+}
+
+.row-header {
+    text-align:center;
+    font-size:large
+}
+
+.centered {
+    text-align:center;
+    line-height:1;
+}
+.adjusted-text{
+    padding-top:16px;
+}
