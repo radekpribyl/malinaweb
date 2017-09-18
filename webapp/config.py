@@ -14,6 +14,6 @@ class MalinaConfig(Config):
 
 
 class TestingConfig(Config):
-    DEBUG = True
+    DEBUG = False
     TESTING = True
     

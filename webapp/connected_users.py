@@ -18,9 +18,9 @@ class ConnectedUsers(object):
                 and self._robot.is_robot_initiated
                 and not self._distance_sensor.measure_running.is_set()):
 
-                # self._distance_sensor.start_distance_measure(
-                #     lambda dist: self._sockio.emit('sensors',
-                #     {'sensor':'distance', 'value':dist}, namespace='/malina'))
+                self._distance_sensor.start_distance_measure(
+                    lambda dist: self._sockio.emit('sensors',
+                    {'sensor':'distance', 'value':dist}, namespace='/malina'))
 
                 self._left_obstacle_sensor.register_both_callbacks(
                     lambda pin, state: self._sockio.emit('sensors', {'sensor':'obs_lf', 'value':state}, namespace='/malina'))
